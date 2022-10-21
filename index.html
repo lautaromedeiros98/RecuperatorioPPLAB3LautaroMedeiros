@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPP Lautaro Medeiros</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <main>
+                <h1>Formulario Datos</h1>
+                <section class="input">
+                    <p>Filtrar Por:</p>
+                    <select name="Filtrarx" id="filtrarX">
+                        <option value="Todos">Todos</option>
+                        <option value="Aereo">Aereo</option> 
+                        <option value="Terrestre">Terrestre</option> 
+                    </select>
+                </section>
+                <section id="promedios"> 
+                    <p> Calcular velocidad maxima Promedio </p>
+                    <input type="text" readonly>
+                    <button id="calcularPromedio">Calcular</button>
+                </section>
+                <section class="option">
+                    <div>
+                        <p>ID</p>
+                        <input type="checkbox" name="Ids" id="ckId" checked>
+                    </div>
+                    <div>
+                        <p>Modelo</p>
+                        <input type="checkbox" name="modelo" id="ckmodelo" checked>
+                    </div>
+                    <div>
+                        <p>Ano fabricacion</p>
+                        <input type="checkbox" name="anoFabriacion" id="ckanoFabriacion" checked>
+                    </div>
+                    <div>
+                        <p>Velocidad maxima</p>
+                        <input type="checkbox" name="velocidadMaxima" id="ckvelocidadMaxima" checked>
+                    </div>
+                    <div>
+                        <P>Altura maxima</P>
+                        <input type="checkbox" name="alturaMaxima" id="ckalturaMaxima" checked>
+                    </div>
+                    <div>
+                        <p>Autonomia</p>
+                        <input type="checkbox" name="autonomia" id="ckautonomia" checked>
+                    </div>
+                    <div>
+                        <p>Cantidad puertas</p>
+                        <input type="checkbox" name="cantidadPuertas" id="ckcantidadPuertas" checked>
+                    </div>
+                    <div>
+                        <p>Cantidad ruedas</p>
+                        <input type="checkbox" name="cantidadRuedas" id="ckcantidadRuedas" checked>
+                    </div>
+                    
+                </section>
+                <table id = "tablaMain">
+                    <thead>
+                        <th class="id" id="OId"> ID </th>
+                        <th class="modelo" id="Omodelo"> modelo </th>
+                        <th class="anoFabricacion" id="OanoFabricacion"> Ano Fabricacion </th>
+                        <th class="velocidadMaxima" id="OvelocidadMaxima"> Velocidad Maxima </th>
+                        <th class="alturaMaxima" id="OalturaMaxima"> Altura Maxima</th>
+                        <th class="autonomia" id="Oautonomia"> Autonomia </th>
+                        <th class="cantidadPuertas" id="OcantidadPuertas"> Cantidad puertas </th>
+                        <th class="cantidadRuedas" id="OcantidadRuedas"> Cantidad ruedas </th>
+                    </thead>
+                </table>
+                <button  id="agregar">AGREGAR</button>
+                <section id="desplegable" class="invisible">
+                    <form action="" name="fAgregar" id="fAgregar"  enctype="multipart/form-data">
+                        <p>ID:</p>
+                        <input type="text" disabled name="id">
+                        <p>Nombre</p>
+                        <input type="text" name="modelo">
+                        <p>Apellido</p>
+                        <input type="text" name="anoFabricacion">
+                        <p>Edad</p>
+                        <input type="text" name="velocidadMaxima">
+                        <p> Tipo</p>
+                        <select name="tipo" id="tipox" >
+                            <option value="Aereo">Aereo</option> 
+                            <option value="Terrestre">Terrestre</option> 
+                        </select>
+                    </form>
+                    <section>
+                        <button id="alta" > Agregar </button>
+                        <button id="editar"> Modificar </button>
+                        <button id="delete"> Eliminar </button>
+                    </section>
+                    
+                </section> 
+    </main>
+    <script src="functions.js"></script>
+    </body>
+</html>

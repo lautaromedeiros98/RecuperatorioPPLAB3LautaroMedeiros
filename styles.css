@@ -1,0 +1,57 @@
+
+main{
+    margin: auto;
+    width: 90%;
+    background: rgb(19, 154, 212);
+    text-align: center;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2%;
+    width: 100%;
+
+}
+section.option{
+    margin: 3%;
+}
+section.option div{
+    border: 1px solid rgb(167, 156, 156);
+}
+table{
+    width: 100%;
+}
+th{
+    border: 1px solid rgb(167, 156, 156);
+}
+td{
+    border: 1px solid rgb(167, 156, 156);
+}
+section#desplegable{
+    flex-direction: column;
+    width: 90%;
+    margin: 5%;
+}
+section#desplegable form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+section#desplegable form input{
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+section#desplegable section{
+    flex-direction: row;
+}
+section#desplegable button{
+    width: 20%;
+    margin: 2%;
+}
+
+.invisible{
+    display: none;    
+}
